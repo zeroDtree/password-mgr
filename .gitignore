@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.DS_Store
+
+# 保险库数据与加密副本（绝不入库）
+vault.json
+vault.json.*.tmp
+vault.json.lock
+*.bak
+*.pmv
+data/
