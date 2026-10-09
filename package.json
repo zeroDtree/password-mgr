@@ -1,0 +1,29 @@
+{
+  "name": "password-mgr",
+  "version": "0.1.0",
+  "description": "Local password manager (CLI + web UI): master-password encrypted, single-file storage, bilingual (English/Chinese)",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "pm": "bin/pm.js"
+  },
+  "scripts": {
+    "pm": "node bin/pm.js",
+    "web": "node bin/pm.js web",
+    "test": "node --test test/",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "dependencies": {
+    "@cordisjs/plugin-cli": "^1.1.2",
+    "@cordisjs/plugin-server": "^1.7.0",
+    "cordis": "^4.0.0-rc.10",
+    "schemastery": "^3.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}

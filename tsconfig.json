@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    // cordis 发布的 .d.ts 使用无扩展名相对导入，需要用 bundler 解析（与 cordis 官方一致）。
+    // 运行时由 Node 原生的 TypeScript 剥离执行，源码中一律显式写 .ts 扩展名。
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src", "test", "bin"]
+}
